@@ -8,16 +8,18 @@ class Home extends React.Component {// dziedziczenie z klasy React.Component.
   static propTypes = {
     title: PropTypes.node,
     subtitle: PropTypes.node,
+    subtitleProjects: PropTypes.node,
     lists: PropTypes.array,
   }
 
   render() { //Od zawartości tej metody zależy to, co wyświetli się w przeglądarce.
-    const {title, subtitle, lists} = this.props;
+    const {title, subtitle, subtitleProjects, lists} = this.props;
     return (  //Podstawową zasadą tworzenia komponentu jest to, że musi 
       //zwracać dokładnie jeden element najwyższego poziomu. Tutaj to main.
       <main className={styles.component}>
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
+        <h2 className={styles.subtitleProjects}>{subtitleProjects}</h2>
         {lists && lists.map(listData => (//iteracja po listach.
           <ListLink key={listData.id} {...listData} />
         ))}

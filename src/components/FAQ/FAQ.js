@@ -11,6 +11,7 @@ const FAQ = () => (
     <p>&nbsp;</p>
     <p>&nbsp;</p>
     <p>{faqContent.email}</p>
+    <p>&nbsp;</p>
     <p>{faqContent.phone}</p>
     <p>&nbsp;</p>
     <p>{faqContent.address}</p>

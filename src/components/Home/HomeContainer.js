@@ -7,6 +7,7 @@ import Home from './Home';  //HomeContainer.js importuje komponent, dla którego
 const mapStateToProps = state => ({   //w stałej mapStateToProps zapisujemy funkcję, która definiuje powiązanie propsów z stanem,
   title: state.app.title,
   subtitle: state.app.subtitle,
+  subtitleProjects: state.app.subtitleProjects,
   lists: state.lists,//możemy udostępnić komponentowi tablicę, znajdującą się w stanie aplikacji.
 });
 

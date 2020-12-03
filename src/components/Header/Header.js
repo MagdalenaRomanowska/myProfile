@@ -4,7 +4,6 @@ import {NavLink, Link} from 'react-router-dom';//NavLink tworzy linki w nawigacj
 //aplikacji, gdzie dany link ma prowadzić.
 import styles from './Header.scss';
 import Container from '../Container/Container';
-import Search from '../Search/Search';
 import Icon from '../Icon/Icon';
 import {settings} from '../../data/dataStore';
 
@@ -17,7 +16,6 @@ class Header extends React.Component {
             <Link to='/' className={styles.logo}>
               <Icon name={settings.catIcon} />
             </Link>
-            <Search />
             <nav className={styles.navlink}>
               <NavLink exact to='/' activeClassName='active'>Home</NavLink>
               <NavLink exact to='/info' activeClassName='active'>About me</NavLink>
