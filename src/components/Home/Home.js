@@ -18,6 +18,7 @@ class Home extends React.Component {// dziedziczenie z klasy React.Component.
       //zwracać dokładnie jeden element najwyższego poziomu. Tutaj to main.
       <main className={styles.component}>
         <h1 className={styles.title}>{title}</h1>
+        <div className={styles.line}></div>
         <h2 className={styles.subtitle}>{subtitle}</h2>
         <h2 className={styles.subtitleProjects}>{subtitleProjects}</h2>
         {lists && lists.map(listData => (//iteracja po listach.

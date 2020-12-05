@@ -46,6 +46,7 @@ const Info = () => (
     <p>{infoContent.content09}</p>
     <p>{infoContent.content10}</p>
     <p>{infoContent.content11}</p>
+    <p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
   </Container>
 );
 

@@ -1,4 +1,4 @@
-@import '../../styles/settings.scss';
+@import "../../styles/settings.scss";
 
 .link {
   text-decoration: none;
@@ -9,11 +9,15 @@
   background: black;
   display: flex;
   margin-bottom: $base-size;
+  border-top: solid 1px $color-warning;
+  border-bottom: solid 1px $color-warning;
   border-radius: $radius;
-  box-shadow: 0 ($base-size / 4) 0 rgba(0,0,0,0.3);
-    &:hover {
-      background-color: rgb(2, 0, 37);
-    }
+  box-shadow: 0 ($base-size / 4) 0 rgba(0, 0, 0, 0.3);
+  &:hover {
+    background-color: rgb(2, 0, 37);
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+  }
 }
 
 .text {
@@ -22,23 +26,23 @@
   margin-right: auto;
   position: relative;
   color: $color-light;
-  
-    i {
-      color: rgb(0, 8, 51);
-      position: absolute;
-      right: 0;
-      border: solid 2px black;
-      border-radius: 5px;
-      padding: 1px 1px 0 1px;
-        &:hover {
-          color: $color-success;
-          border: solid 2px $color-success;
-        }
+
+  i {
+    color: rgb(0, 8, 51);
+    position: absolute;
+    right: 0;
+    border: solid 2px black;
+    border-radius: 5px;
+    padding: 1px 1px 0 1px;
+    &:hover {
+      color: $color-success;
+      border: solid 2px $color-success;
     }
+  }
 }
 
 .title {
-  margin-bottom: ($base-size *0.8);
+  margin-bottom: ($base-size * 0.8);
   max-width: 400px;
 }
 
@@ -54,8 +58,8 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
-      &:hover {
-        opacity: 0.6;
-      }
+    &:hover {
+      opacity: 0.6;
+    }
   }
 }

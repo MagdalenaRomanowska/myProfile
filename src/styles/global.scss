@@ -7,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: $color-dark;
+  background-image: linear-gradient(to right, rgb(85, 9, 116), rgb(4, 1, 65),  rgb(2, 0, 48), rgb(4, 1, 65),  rgb(85, 9, 116));
   font-family: $font-text;
   font-size: ($base-size * 1.1);
   color: $color-light;
