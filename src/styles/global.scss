@@ -7,12 +7,28 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(to right, rgb(85, 9, 116), rgb(4, 1, 65),  rgb(2, 0, 48), rgb(4, 1, 65),  rgb(85, 9, 116));
+  //background-image: linear-gradient(to right, rgb(85, 9, 116), rgb(4, 1, 65),  rgb(2, 0, 48), rgb(4, 1, 65),  rgb(85, 9, 116));
+  background: linear-gradient(-45deg, #88199e, rgb(85, 9, 116),rgb(4, 1, 65), #0476d3);
+	background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+  
   font-family: $font-text;
   font-size: ($base-size * 1.1);
   color: $color-light;
   letter-spacing: 0.5px;
   overflow-y: scroll;  //pasek przewijania będzie zawsze widoczny.
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 :global(.container) {
