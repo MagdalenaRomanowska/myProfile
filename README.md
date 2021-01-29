@@ -1,5 +1,6 @@
 ### **General info**
-- App is made for eductional purposes (practising React) during Web Developer Bootcamp 2020.
+- Portfolio of Magdalena Romanowska.
+
 
 ### **Running the project**
 - One can run this project with command:
