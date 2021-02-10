@@ -1,5 +1,5 @@
 ### **General info**
-- Portfolio of Magdalena Romanowska.
+- Portfolio of Magdalena Romanowska - Web Developer.
 
 
 ### **Running the project**
@@ -14,4 +14,4 @@ npm start
 
 # App is published here:
 
-https://react-to-do-app-starter.herokuapp.com/
+https://magdalena-romanowska-portfolio.herokuapp.com/
